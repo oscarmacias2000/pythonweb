@@ -5,6 +5,10 @@ import Home from './Home'
 import FlowsHttp from './flowsHttp'
 import Http from './http'
 import Login from './login'
+import Exe from './exe'
+import ExpoRender from './Expo'
+import UbuntuRender from './ubuntu'
+import WindowsRender from './windows'
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
           <Route path="/flowsHttp" element={<FlowsHttp />} />
           <Route path="/http" element={<Http />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/exe" element={<Exe />} />
+          <Route path="/expoRender" element={<ExpoRender />} />
+          <Route path="/ubuntuRender" element={<UbuntuRender />} />
+          <Route path="/windowsRender" element={<WindowsRender />} />
         </Routes>
       </Router>
     </>

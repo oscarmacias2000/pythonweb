@@ -14,6 +14,7 @@
     "bootstrap-icons": "^1.13.1",
     "child": "^0.0.3",
     "process": "^0.11.10",
+    "qrcode": "^1.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router": "^7.13.0"
@@ -26,10 +27,6 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "vite": "npm:rolldown-vite@7.2.5"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
+    "globals": "^16.5.0"
   }
 }

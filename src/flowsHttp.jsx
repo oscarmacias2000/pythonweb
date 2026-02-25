@@ -12,8 +12,8 @@ export default function MainLayout() {
                     </div>
                     <form class="d-flex w-50 " role="search">
                         <input class="form-control me-2 w-50" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-success" type="submit">Sign in</button>
-                        <button class="btn btn-outline-success" type="submit">Create account</button>
+                        <button class="btn btn-outline-light" type="submit">Sign in</button>
+                        <button class="btn btn-outline-light" type="submit">Create account</button>
                     </form>
 
                     <div className="d-flex">
