@@ -1,0 +1,155 @@
+.mini-shell {
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.shell-header {
+  background: linear-gradient(180deg, #2d2d2d 0%, #1e1e1e 100%);
+  padding: 10px 15px;
+  border-bottom: 1px solid #333;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.shell-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.shell-status {
+  font-size: 12px;
+  color: #00ff00;
+  animation: blink 2s infinite;
+}
+
+.shell-body {
+  background-color: #000;
+  color: #00ff00;
+  padding: 15px;
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.shell-input-line {
+  background-color: #1e1e1e;
+  padding: 10px 15px;
+  border-top: 1px solid #333;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.shell-prompt {
+  color: #00ff00;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.shell-input {
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  flex: 1;
+  outline: none;
+}
+
+.shell-line {
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.shell-line.input {
+  color: #00ff00;
+}
+
+.shell-line.output {
+  color: #fff;
+}
+
+.shell-line.error {
+  color: #ff0000;
+}
+
+.shell-line.system {
+  color: #888;
+  font-style: italic;
+}
+
+.shell-line.hacker {
+  color: #00ff00;
+  opacity: 0.3;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* Modo hacker */
+.hacker-mode {
+  animation: glitch 0.1s infinite;
+}
+
+.hacker-mode .shell-body {
+  background-color: #000;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Animaciones */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.5; }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Scrollbar personalizado */
+.shell-body::-webkit-scrollbar {
+  width: 100px;
+}
+
+.shell-body::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.shell-body::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 1px;
+}
+
+.shell-body::-webkit-scrollbar-thumb:hover {
+  background: #00cc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mini-shell {
+    margin: 10px;
+    width: calc(100% - 20px);
+  }
+  
+  .shell-body {
+    min-height: 300px;
+    max-height: 400px;
+  }
+}

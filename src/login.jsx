@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router';
+import Image from '../src/assets/logos-main/logos-main/png/logo.jpeg';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function Login() {
         <div className="container">
             <div className="container img d-flex align-items-center justify-content-center overflow-y">
                 <div className="login">
-                    <img src="https://docs.metasploit.com/assets/images/metasploit-logo-dark-external-use.svg" alt="" />
+                    <img src={Image} alt="Logo" />
                     <form action="">
                         <div className="mb-3">
                             <label htmlFor="username" className="form-label" id="username">Username</label>

@@ -9,8 +9,13 @@ import Exe from './exe'
 import ExpoRender from './Expo'
 import UbuntuRender from './ubuntu'
 import WindowsRender from './windows'
+import PortScanner from '../src/scannerTool'
+import ToolsBrowser from './toolsBrowser'
+import MiniShell from './tools/shellDemo'
 
 function App() {
+
+  console.log('PorScanner', PortScanner)
   return (
     <>
       <Router>
@@ -23,6 +28,9 @@ function App() {
           <Route path="/expoRender" element={<ExpoRender />} />
           <Route path="/ubuntuRender" element={<UbuntuRender />} />
           <Route path="/windowsRender" element={<WindowsRender />} />
+          <Route path='/portScanner' element={<PortScanner/>}></Route>
+          <Route path='/ToolsBrowser' element={<ToolsBrowser/>}></Route>
+          <Route path='/MiniShell' element={<MiniShell/>}></Route>
         </Routes>
       </Router>
     </>

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import Logotipo from '../src/assets/logos-main/logos-main/logo.jpeg';
+import Logotipo from '../src/assets/logos-main/logos-main/png/logo.jpeg';
 
 export default function Footer() {
     return (
